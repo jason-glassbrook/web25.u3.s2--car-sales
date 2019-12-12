@@ -1,12 +1,12 @@
 import React from 'react';
 import * as ReactRedux from 'react-redux';
 
-import car from 'reducers/car';
+import car from 'states/car';
 
-import Header from './components/Header';
-import AddedFeatures from './components/AddedFeatures';
-import AdditionalFeatures from './components/AdditionalFeatures';
-import Total from './components/Total';
+import Header from 'components/Header';
+import AddedFeatures from 'components/AddedFeatures';
+import AdditionalFeatures from 'components/AdditionalFeatures';
+import Total from 'components/Total';
 
 const App = () => {
   const [ state, dispatch ] = React.useReducer (car.reducer, car.init);

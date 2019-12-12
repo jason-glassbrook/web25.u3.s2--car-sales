@@ -1,7 +1,7 @@
 import React from 'react';
+import * as ReactRedux from 'react-redux';
 
-import car from 'reducers/car';
-
+import car from 'states/car';
 import AddedFeature from './AddedFeature';
 
 const AddedFeatures = props => {
