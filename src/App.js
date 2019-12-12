@@ -1,4 +1,7 @@
 import React from 'react';
+import * as Redux from 'react-redux';
+
+import car from 'reducers/car';
 
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';

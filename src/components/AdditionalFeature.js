@@ -1,4 +1,7 @@
 import React from 'react';
+import * as Redux from 'react-redux';
+
+import car from 'reducers/car';
 
 const AdditionalFeature = props => {
   return (

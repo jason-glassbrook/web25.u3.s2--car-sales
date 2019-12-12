@@ -1,5 +1,7 @@
 import React from 'react';
 
+import car from 'reducers/car';
+
 import AddedFeature from './AddedFeature';
 
 const AddedFeatures = props => {
