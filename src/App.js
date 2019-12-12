@@ -9,13 +9,11 @@ import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 
 const App = () => {
-  const addFeature = item => {
-    // dipsatch an action here to add an item
-  };
+  const [ state, dispatch ] = React.useReducer (car.reducer, car.init);
+  const send = car.actions.senders (dispatch);
 
-  const removeFeature = item => {
-    // dispatch an action here to remove an item
-  };
+  const addFeature = (item) => send.ADD_FEATURE (item);
+  const removeFeature = (item) => send.REMOVE_FEATURE (item);
 
   return (
     <div className="boxes">
