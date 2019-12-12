@@ -10,10 +10,10 @@ import Total from 'components/Total';
 
 const App = () => {
   const [ state, dispatch ] = React.useReducer (car.reducer, car.init);
-  const send = car.actions.senders (dispatch);
+  // const send = car.actions.makers (dispatch);
 
-  const addFeature = (item) => send.ADD_FEATURE (item);
-  const removeFeature = (item) => send.REMOVE_FEATURE (item);
+  // const addFeature = (item) => send.ADD_FEATURE (item);
+  // const removeFeature = (item) => send.REMOVE_FEATURE (item);
 
   return (
     <div className="boxes">
