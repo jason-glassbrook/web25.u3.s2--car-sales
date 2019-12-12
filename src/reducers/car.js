@@ -40,8 +40,8 @@ actions.make = (type, data) => {
 };
 
 actions.names = [
-  'ADD_FEATURE_TO_CAR',
-  'REMOVE_FEATURE_FROM_CAR',
+  'ADD_FEATURE',
+  'REMOVE_FEATURE',
 ];
 
 actions.senders = (dispatch) => Object.fromEntries (
@@ -60,10 +60,10 @@ export const reducer = (state = init, { type, data }) => {
   try {
     /// actions ///
     switch (type) {
-      case 'ADD_FEATURE_TO_CAR' :
+      case 'ADD_FEATURE' :
         hi.flag ('log', 'adding feature to car');
         return (state);
-      case 'REMOVE_FEATURE_FROM_CAR' :
+      case 'REMOVE_FEATURE' :
         hi.flag ('log', 'removing feature from car');
         return (state);
       // else
