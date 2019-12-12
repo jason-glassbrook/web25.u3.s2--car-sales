@@ -2,7 +2,7 @@
 import hi from 'tools/hi';
 import iffy from 'tools/iffy';
 import immutably from 'tools/immutably';
-import nullably from 'tools/nullably'
+import nullably from 'tools/nullably';
 
 /**************************************/
 
