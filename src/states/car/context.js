@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CarContext = React.createContext ();
-CarContext.displayName = '_Context';
+const context = React.createContext ();
+context.displayName = 'CarContext';
 
-export default CarContext;
+export default context;
