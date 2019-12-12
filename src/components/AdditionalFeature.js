@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Redux from 'react-redux';
+import * as ReactRedux from 'react-ReactRedux';
 
 import car from 'reducers/car';
 
@@ -17,7 +17,7 @@ const mapStateToProps = (state) => ({
 });
 
 export default (
-  Redux.connect (
+  ReactRedux.connect (
     mapStateToProps, {}
   ) (
     AdditionalFeature
