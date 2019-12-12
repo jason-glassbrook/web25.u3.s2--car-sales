@@ -30,7 +30,7 @@ export const init = {
   actions
   .make - fun to make an action obj
   .names - list of action names (types)
-  .senders - funs to send (dispatch) action objs
+  .makers - obj of action maker (creator) funs
 --------------------------------------*/
 export const actions = {};
 
@@ -44,9 +44,9 @@ actions.names = [
   'REMOVE_FEATURE',
 ];
 
-actions.senders = (dispatch) => Object.fromEntries (
+actions.makers = Object.fromEntries (
   actions.names.map ((name) => [
-    name, (...args) => dispatch (actions.make (name, ...args))
+    name, (...args) => actions.make (name, ...args)
   ])
 );
 
