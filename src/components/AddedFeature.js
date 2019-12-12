@@ -13,4 +13,13 @@ const AddedFeature = props => {
   );
 };
 
-export default AddedFeature;
+const mapStateToProps = (state) => ({
+});
+
+export default (
+  Redux.connect (
+    mapStateToProps, {}
+  ) (
+    AddedFeature
+  )
+);

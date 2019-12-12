@@ -48,4 +48,13 @@ const App = () => {
   );
 };
 
-export default App;
+const mapStateToProps = (state) => ({
+});
+
+export default (
+  Redux.connect (
+    mapStateToProps, {}
+  ) (
+    App
+  )
+);
