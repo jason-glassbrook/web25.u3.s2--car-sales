@@ -1,5 +1,5 @@
 import React from 'react';
-import * as ReactRedux from 'react-ReactRedux';
+import * as ReactRedux from 'react-redux';
 
 import car from 'reducers/car';
 
