@@ -4,7 +4,7 @@
   - init : initial state
 ***************************************/
 
-export const init = {
+const init = {
   additionalPrice: 0,
   car: {
     price: 26395,

@@ -14,7 +14,7 @@ import { types } from './actions';
   - reducer : state reducer
 ***************************************/
 
-export const reducer = (state = initState, action) => {
+const reducer = (state = initState, action) => {
   ///>>> add any helper funs <<<///
 
   /// do it! ///
