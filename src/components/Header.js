@@ -1,4 +1,19 @@
 import React from 'react';
+import * as ReactRedux from 'react-redux';
+
+/**************************************/
+
+const mapStateToProps = (state) => ({
+  car : state.car,
+});
+
+const mapDispatchToProps = ({});
+
+const connectHeader = ReactRedux.connect (
+  mapStateToProps, mapDispatchToProps
+);
+
+/**************************************/
 
 const Header = props => {
   return (
@@ -12,4 +27,6 @@ const Header = props => {
   );
 };
 
-export default Header;
+/**************************************/
+
+export default connectHeader (Header);
