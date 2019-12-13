@@ -18,7 +18,7 @@ const connectAddedFeatures = ReactRedux.connect (
 
 /**************************************/
 
-const AddedFeatures = ({ cars, ...props }) => {
+const AddedFeatures = ({ car, ...props }) => {
   return (
     <div className="content">
       <h6>Added features:</h6>
