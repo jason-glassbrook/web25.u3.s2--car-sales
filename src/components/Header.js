@@ -3,8 +3,8 @@ import * as ReactRedux from 'react-redux';
 
 /**************************************/
 
-const mapStateToProps = (state) => ({
-  car : state.car,
+const mapStateToProps = ({ car, ...state }) => ({
+  car,
 });
 
 const mapDispatchToProps = ({});
@@ -15,7 +15,7 @@ const connectHeader = ReactRedux.connect (
 
 /**************************************/
 
-const Header = props => {
+const Header = ({ car, ...props }) => {
   return (
     <>
       <figure className="image is-128x128">

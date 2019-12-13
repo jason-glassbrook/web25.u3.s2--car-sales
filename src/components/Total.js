@@ -3,9 +3,8 @@ import * as ReactRedux from 'react-redux';
 
 /**************************************/
 
-const mapStateToProps = (state) => ({
-  car : state.car,
-  additionalPrice : state.additionalPrice,
+const mapStateToProps = ({ car, additionalPrice, ...state }) => ({
+  car, additionalPrice,
 });
 
 const mapDispatchToProps = ({});
@@ -16,10 +15,10 @@ const connectTotal = ReactRedux.connect (
 
 /**************************************/
 
-const Total = props => {
+const Total = ({ car, additionalPrice, ...props }) => {
   return (
     <div className="content">
-      <h4>Total Amount: ${props.car.price + props.additionalPrice}</h4>
+      <h4>Total Amount: ${car.price + additionalPrice}</h4>
     </div>
   );
 };
