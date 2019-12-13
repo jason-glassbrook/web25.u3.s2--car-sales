@@ -25,3 +25,8 @@ export default {
   types,
   makers,
 };
+
+export {
+  types,
+  makers,
+};
