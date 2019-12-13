@@ -22,7 +22,7 @@ const App = () => {
         <AddedFeatures/>
       </div>
       <div className="box">
-        <AdditionalFeatures additionalFeatures={state.additionalFeatures} />
+        <AdditionalFeatures/>
         <Total/>
       </div>
     </div>
